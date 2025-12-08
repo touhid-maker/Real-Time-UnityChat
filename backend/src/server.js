@@ -19,11 +19,11 @@ const __dirname = path.resolve();
 
 // make ready for deployment
 if(ENV.NODE_ENV=== "production"){
-    app.use(express.static(path.join(__dirname, "../frontend/dist")));
+    app.use(express.static(path.join(__dirname, "../../frontend/dist")));
 
     // React routing fallback
     app.get("*", (_, res)=>{
-        res.sendFile(path.join(path.join(__dirname, "../frontend/dist/index.html")));
+        res.sendFile(path.join(path.join(__dirname, "../../frontend/dist/index.html")));
     })
 }
 
