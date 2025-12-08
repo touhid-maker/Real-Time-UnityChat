@@ -23,7 +23,7 @@ if(ENV.NODE_ENV=== "production"){
 
     // React routing fallback
     app.get("*", (_, res)=>{
-        res.sendFile(path.join(path.join(__dirname, "../frontend", "dist", "index.html")));
+        res.sendFile(path.join(path.join(__dirname, "../frontend/dist/index.html")));
     })
 }
 
