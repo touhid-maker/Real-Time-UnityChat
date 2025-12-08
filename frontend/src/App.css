@@ -1,0 +1,371 @@
+/* 
+______________________________________________
+
+    SignUP Page Section + Login Page Section
+______________________________________________
+*/
+.signup-section,
+.login-section {
+    padding: 30px;
+}
+
+
+.signup-section form label,
+.login-section form label {
+    font-size: 15px;
+    color: #343434;
+}
+
+.signup-section form .form-input input,
+.login-section form .form-input input {
+    outline: none;
+    padding: 6px 15px;
+    padding-left: 30px;
+    border-radius: 5px;
+    border: 1px solid #8C49CE;
+    font-size: 15px;
+    width: 100%;
+}
+
+.signup-section form .form-input input::placeholder,
+.login-section form .form-input input::placeholder {
+    color: #9d9d9d;
+}
+
+.signup-section form .form-input input:focus,
+.login-section form .form-input input:focus {
+    border-color: rgb(4, 184, 4);
+}
+
+.signup-section form .form-input,
+.login-section form .form-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.signup-section form .form-input i,
+.login-section form .form-input i {
+    position: absolute;
+    left: 10px;
+    font-size: 14px;
+}
+
+.auth-btn {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 6px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #8C49CE, #3D51D2);
+    color: #fff;
+    position: relative;
+}
+
+.auth-btn:hover {
+    background: linear-gradient(135deg, #8b49cedf, #3d51d2de);
+}
+
+.spin-in-auth-btn {
+    color: #fff !important;
+}
+
+.auth-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #343434;
+}
+
+
+
+/* 
+-----------------------------------------
+Chat Page Dashboard Section
+-----------------------------------------
+
+*/
+.chatPage-section {
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(135deg, #0d9488, #1d4ed8); */
+    background: #e9e9e9;
+    /* background: linear-gradient(135deg, #8C49CE, #3D51D2); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-dashboard-header {
+    /* background: linear-gradient(135deg, #3D51D2, #8C49CE); */
+    /* background: #3e3e3e; */
+    /* background: linear-gradient(135deg, #6441A5, #2a0845); */
+    /* position: fixed;
+    width: 100%; */
+}
+
+
+
+/* 
+-----------------------------------------
+Profile Header section
+-----------------------------------------
+*/
+.user-profile-avatar:hover .avatar-btn {
+    opacity: 0.8;
+}
+.avatar-btn {
+    border: 2px solid #3D51D2;
+}
+
+.user-profile-avatar:hover::after {
+    content: attr(data-tip);
+    position: absolute;
+    right: 0;
+    top: 130%;
+    background: linear-gradient(135deg, #3D51D2, #8C49CE);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 13px;
+    z-index: 10;
+    box-shadow: 0 0 5px #aaaaaa;
+}
+
+.logout-btn {
+    transition: 0.2s;
+}
+
+.logout-btn:hover {
+    opacity: 0.8;
+}
+
+
+
+
+/* 
+-----------------------------------------
+ActiveTab Switch section
+-----------------------------------------
+*/
+.active-tab-switch {
+    /* border-bottom: 1px solid #d8d8d8;     */
+}
+
+.active-tab-btn {
+    /* background: #676767; */
+    background: #e9e9e9;
+    border: none;
+    padding: 6px 25px;
+    /* box-shadow: 0 0 3px #3e3e3e; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.if-active-btn {
+    background: linear-gradient(135deg, #3D51D2, #8C49CE);
+    color: #fff;
+}
+
+
+
+
+/* 
+-----------------------------------------
+No Chat Found section
+-----------------------------------------
+*/
+.find-Contacts-btn:hover {
+    background: linear-gradient(135deg, #8C49CE, #3D51D2);
+    opacity: 0.8;
+}
+
+
+/* 
+-----------------------------------------
+Chat List section
+-----------------------------------------
+*/
+
+.skeleton-pulse {
+    animation: pulseAnim 1s ease-in-out infinite;
+}
+
+@keyframes pulseAnim {
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.chatlist-section {
+    transition: all 0.4s;
+}
+
+.chatlist-section .chat-user-bg {
+    cursor: pointer;
+}
+
+.chatlist-section .chat-user-bg:hover {
+    background: linear-gradient(135deg, #3D51D2, #8C49CE);
+}
+
+.chatlist-section .chat-user-bg:hover .chat-username {
+    color: #fff !important;
+}
+
+.chatlist-section .chat-user-bg:hover .user-img-div {
+    border-color: #fff !important;
+}
+
+.chatlist-section .online {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background: green !important;
+    border: 1px solid #ffffff;
+}
+
+.chatlist-section .offline {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background: #dc3545 !important;
+    border: 1px solid #ffffff;
+}
+
+.chatlist-section .chat-user-bg:hover .online-text {
+    color: #fff !important;
+}
+
+/* 
+-----------------------------------------
+Chat Contact List section
+-----------------------------------------
+*/
+
+.chatcontactlist-section {
+    transition: all 0.4s;
+}
+
+.chatcontactlist-section .contact-user-bg {
+    cursor: pointer;
+}
+
+.chatcontactlist-section .contact-user-bg:hover {
+    background: linear-gradient(135deg, #3D51D2, #8C49CE);
+}
+
+.chatcontactlist-section .contact-user-bg:hover .contact-username {
+    color: #fff !important;
+}
+
+.chatcontactlist-section .contact-user-bg:hover .user-img-div {
+    border-color: #fff !important;
+}
+
+.chatcontactlist-section .online {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background: green !important;
+    border: 1px solid #ffffff;
+}
+
+.chatcontactlist-section .offline {
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background: #dc3545 !important;
+    border: 1px solid #ffffff;
+}
+
+.chatcontactlist-section .contact-user-bg:hover .online-text {
+    color: #fff !important;
+}
+
+/* 
+-----------------------------------------
+Chat Dashboard section
+-----------------------------------------
+*/
+
+.left-section {
+    /* background: linear-gradient(90deg, #393D40, #2C2D31); */
+}
+
+
+
+.chat-close-btn:hover i {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+.input-text-btn {
+    border: 1px solid #3D51D2;
+    outline: none;
+}
+
+.input-text-btn:focus {
+    border: 1px solid green !important;
+}
+
+
+.input-img-button:hover {
+    background: #3D51D2 !important;
+}
+
+.input-img-button:hover i {
+    color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 4px;
+    background: #F8F9FA;
+}
+
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background: #F8F9FA;
+    border-left: 1px solid rgb(226, 226, 226); 
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3D51D2, #8C49CE);
+    border-radius: 0.9rem;
+}
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(135deg, #3d51d2c9, #8b49ced5);
+    /* lighter cyan */
+}
