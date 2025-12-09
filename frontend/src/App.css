@@ -380,22 +380,13 @@ Chat Dashboard section
 
 
 
-
-
-
-
-
-
-
-
-
 /* responsive style */
 
-.left-section {
+.chat-dashboard-section .left-section {
     width: 38%;
 }
 
-.right-section {
+.chat-dashboard-section .right-section {
     width: 62%;
 }
 
@@ -404,11 +395,11 @@ Chat Dashboard section
 
 @media screen and (max-width: 1200px) {
 
-    .left-section {
+   .chat-dashboard-section .left-section {
         width: 41%;
     }
 
-    .right-section {
+   .chat-dashboard-section .right-section {
         width: 59%;
     }
 
@@ -426,11 +417,11 @@ Chat Dashboard section
         overflow-y: scroll !important; 
 
     }
-    .left-section {
+    .chat-dashboard-section .left-section {
         width: 100%;
     }
 
-    .right-section {
+    .chat-dashboard-section .right-section {
         width: 100%;
     }
 
