@@ -21,7 +21,7 @@ function ChatsList() {
   return (
     <>
     <div className="chatlist-section bg-light">
-    {chats.map((chat) => (
+    {Array.isArray(chats) && chats.map((chat) => (
     <div
       key={chat._id}
       className="clickable chat-user-bg bg-light border-1 border-bottom"
