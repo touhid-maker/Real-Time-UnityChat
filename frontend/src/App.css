@@ -374,17 +374,68 @@ Chat Dashboard section
 
 
 
-// Media Query
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive style */
+
+.left-section {
+    width: 38%;
+}
+
+.right-section {
+    width: 62%;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .left-section {
+        width: 41%;
+    }
+
+    .right-section {
+        width: 59%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .chat-dashboard-section {
+        overflow-y: scroll;
+    }
+
+    .chat-dashboard {
+        flex-direction: column !important;
+    }
+
+
+}
+
 
 @media screen and (max-width: 524px) {
 
     .signup-section,
     .login-section {
-        padding: 20px ;
+        padding: 20px;
     }
 
 }
-
 
 
 
