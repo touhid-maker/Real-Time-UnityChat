@@ -8,7 +8,7 @@ import { useAuthStore } from './useAuthStore.js';
 export const useChatStore = create((set, get) => ({
     allContacts: [],
     chats: [],
-    message: [],
+    messages: [],
     activeTab: "chats",
     selectedUser: null,
     isUsersLoading: false,
