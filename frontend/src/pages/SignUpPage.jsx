@@ -23,7 +23,7 @@ function SignUpPage() {
 
     return (
         <div className="col-12 d-flex align-items-center justify-content-center">
-            <div className="signup-section bg-light col-md-4 rounded-4 shadow" style={{ border: "1px solid #7184f9ab" }}>
+            <div className="signup-section bg-light rounded-4 shadow" style={{ border: "1px solid #7184f9ab" }}>
                 <div className="mb-4 text-center">
                     <h3 className="d-block fw-bold" style={{ color: "#3D51D2" }}>Welcome to Signup!</h3>
                     <span className="d-block text-black-50" style={{ fontSize: '14px' }}>UnityChat</span>
