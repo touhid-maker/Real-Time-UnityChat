@@ -11,6 +11,7 @@ function LoginPage() {
         password: "",
     });
 
+    const { login, isLoggingIn } = useAuthStore();
     const handleSubmit = (e) => {
         e.preventDefault();
         login(formData);
