@@ -388,6 +388,7 @@ Chat Dashboard section
 
 
 
+
 /* responsive style */
 
 .left-section {
@@ -417,13 +418,21 @@ Chat Dashboard section
 
 @media screen and (max-width: 1024px) {
     .chat-dashboard-section {
-        overflow-y: scroll;
+        overflow-y: inherit !important;
     }
 
-    .chat-dashboard {
-        flex-direction: column !important;
+    .chat-dashboard-section .chat-dashboard {
+        flex-direction: column;
+        overflow-y: scroll !important; 
+
+    }
+    .left-section {
+        width: 100%;
     }
 
+    .right-section {
+        width: 100%;
+    }
 
 }
 
