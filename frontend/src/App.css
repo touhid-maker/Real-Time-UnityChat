@@ -391,6 +391,9 @@ Chat Dashboard section
 }
 
 
+.chat-dashboard-section .profile-header-mobile {
+    display: none !important;
+}
 
 
 @media screen and (max-width: 1200px) {
