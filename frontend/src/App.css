@@ -20,7 +20,7 @@ ______________________________________________
 .signup-section form .form-input input,
 .login-section form .form-input input {
     outline: none;
-    padding: 6px 15px;
+    padding: 8px 15px;
     padding-left: 30px;
     border-radius: 5px;
     border: 1px solid #8C49CE;
