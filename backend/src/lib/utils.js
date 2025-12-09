@@ -18,7 +18,7 @@ export const generateToken = (userId, res)=> {
     httpOnly : true, // prevent XSS attackts: cross-site scripting
     sameSite: "none", // CSRF Attacks
     sameSite: ENV.NODE_ENV === "development" ? "lax" : "none",
-    secure: ENV.NODE_ENV=== "development" ? false : true,
+    secure: true,
 
   });
 
