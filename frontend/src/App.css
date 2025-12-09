@@ -56,7 +56,7 @@ ______________________________________________
     outline: none;
     border: none;
     width: 100%;
-    padding: 6px;
+    padding: 8px;
     border-radius: 50px;
     background: linear-gradient(135deg, #8C49CE, #3D51D2);
     color: #fff;
@@ -121,11 +121,11 @@ Profile Header section
 .user-profile-avatar:hover::after {
     content: attr(data-tip);
     position: absolute;
-    right: 0;
+    left: 0;
     top: 130%;
     background: linear-gradient(135deg, #3D51D2, #8C49CE);
     color: #fff;
-    padding: 4px 8px;
+    padding: 6px 8px;
     border-radius: 4px;
     white-space: nowrap;
     font-size: 13px;
