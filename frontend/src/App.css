@@ -7,6 +7,7 @@ ______________________________________________
 .signup-section,
 .login-section {
     padding: 30px;
+    width: 400px;
 }
 
 
@@ -369,3 +370,29 @@ Chat Dashboard section
       background: linear-gradient(135deg, #3d51d2c9, #8b49ced5);
     /* lighter cyan */
 }
+
+
+
+
+// Media Query
+
+@media screen and (max-width: 524px) {
+
+    .signup-section,
+    .login-section {
+        padding: 20px ;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
