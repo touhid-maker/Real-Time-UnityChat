@@ -6,14 +6,15 @@ import { Link } from "react-router";
 
 function LoginPage() {
 
-    const [formData, setFormData, title , setTitle ] = useState({
+    const [formData, setFormData ] = useState({
         email: "",
         password: "",
     });
 
+    const [titel, setTitle] = useState("login");
     useEffect( ()=> {
         document.title = "Login"
-    }), [title];
+    }, [title]);
 
     const { login, isLoggingIn } = useAuthStore();
 
