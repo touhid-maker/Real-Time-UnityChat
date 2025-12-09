@@ -26,7 +26,16 @@ function ChatPage() {
                 <div className="chat-dashboard d-flex align-items-center justify-content-between">
                     <div className="left-section  col-4 overflow-hidden">
                         <div className=" border-1 border-end" style={{ height: "97vh" }}>
-                            <div className="d-flex align-items-center justify-content-start gap-3 rounded-2 pt-3 px-4">
+                             <div className="profile-header-mobile d-flex align-items-center justify-content-between gap-3 rounded-2 pt-3 px-4">
+                                <div className="d-flex align-items-center justify-content-start gap-3">
+                                    <img src={UnityChatLogo} alt="UnityChat Logo" style={{ height: "40px", width: "40px" }} />
+                                    <span className="fs-2 fw-bold">UnityChat</span>
+                                </div>
+                                <div className="profile-header-mobile-profile">
+                                    <ProfileHeader />
+                                </div>
+                            </div>
+                            <div className="profile-header-desktop d-flex align-items-center justify-content-start gap-3 rounded-2 pt-3 px-4">
                                 <img src={UnityChatLogo} alt="UnityChat Logo" style={{ height: "40px", width: "40px" }} />
                                 <span className="fs-2 fw-bold">UnityChat</span>
                             </div>
@@ -42,10 +51,10 @@ function ChatPage() {
                         </div>
                     </div>
                     <div className="right-section col-8 px-4 pb-4" style={{ height: "97vh" }}>
-                        <div className="py-3">
+                        <div className="py-3 profile-header-desktop">
                             <ProfileHeader />
                         </div>
-                        <div className="rounded-4 overflow-hidden border border-1 position-relative" style={{ height: '78vh', background: '#efefefff' }}>
+                        <div className="message-content-body rounded-4 overflow-hidden border border-1 position-relative" style={{ height: '78vh', background: '#efefefff' }}>
                             {selectedUser ? <ChatContainer /> : <NoConversationPlaceholder />}
                         </div>
                     </div>
