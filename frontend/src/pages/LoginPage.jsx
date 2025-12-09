@@ -11,13 +11,6 @@ function LoginPage() {
         password: "",
     });
 
-    const [titel, setTitle] = useState("login");
-    useEffect( ()=> {
-        document.title = "Login"
-    }, [title]);
-
-    const { login, isLoggingIn } = useAuthStore();
-
     const handleSubmit = (e) => {
         e.preventDefault();
         login(formData);
