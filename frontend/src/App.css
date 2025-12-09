@@ -444,6 +444,18 @@ Chat Dashboard section
     .chat-dashboard-section {
         overflow-y: scroll !important;
     }
+
+      .chat-page-main-section {
+        width: 98% !important;
+    }
+
+    .chat-dashboard .left-section .chat-contact-lists-section {
+        margin: 0 10px !important;
+    }
+    .chat-dashboard .right-section {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
     
 }
 
