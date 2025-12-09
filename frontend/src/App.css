@@ -395,11 +395,11 @@ Chat Dashboard section
 
 @media screen and (max-width: 1200px) {
 
-   .chat-dashboard-section .left-section {
+    .chat-dashboard .left-section {
         width: 41%;
     }
 
-   .chat-dashboard-section .right-section {
+    .chat-dashboard .right-section {
         width: 59%;
     }
 
@@ -414,36 +414,50 @@ Chat Dashboard section
 
     .chat-dashboard-section .chat-dashboard {
         flex-direction: column;
-        overflow-y: scroll !important; 
+        overflow-y: scroll !important;
 
     }
-    .chat-dashboard-section .left-section {
+
+    .chat-dashboard .left-section {
         width: 100%;
     }
 
-    .chat-dashboard-section .right-section {
+    .chat-dashboard .right-section {
         width: 100%;
     }
 
+    .chat-dashboard-section .profile-header-mobile {
+        display: flex !important;
+    }
+
+    .chat-dashboard-section .profile-header-desktop {
+        display: none !important;
+    }
+
+    .chat-dashboard .message-content-body {
+        margin-top: 35px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .chat-dashboard-section .profile-header-mobile {
+        display: block !important;
+    }
+
+    .chat-dashboard-section .profile-header-mobile .profile-header-mobile-profile {
+        margin-top: 25px !important;
+    }
 }
 
 
 @media screen and (max-width: 524px) {
 
-    .signup-section,
-    .login-section {
+    .chat-dashboard .signup-section,
+    .chat-dashboard .login-section {
         padding: 20px;
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
