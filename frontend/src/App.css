@@ -441,6 +441,10 @@ Chat Dashboard section
         margin-top: 35px !important;
     }
 
+    .chat-dashboard-section {
+        overflow-y: scroll;
+    }
+    
 }
 
 
