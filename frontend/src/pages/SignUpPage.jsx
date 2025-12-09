@@ -6,15 +6,16 @@ import { Link } from "react-router";
 function SignUpPage() {
 
 
-    const [formData, setFormData, title , setTitle ] = useState({
+    const [formData, setFormData ] = useState({
         fullName: "",
         email: "",
         password: "",
     });
 
+    const [title, setTitle] = useState("Signup");
     useEffect( ()=> {
         document.title = "Signup"
-    }), [title];
+    }, [title]);
 
     const { signup, isSigninUp } = useAuthStore();
 
