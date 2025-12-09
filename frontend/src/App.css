@@ -442,7 +442,7 @@ Chat Dashboard section
     }
 
     .chat-dashboard-section {
-        overflow-y: scroll;
+        overflow-y: scroll !important;
     }
     
 }
