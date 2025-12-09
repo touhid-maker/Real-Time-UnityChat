@@ -13,7 +13,7 @@ function ChatPage() {
     const { activeTab, selectedUser } = useChatStore();
 
     return (
-        <div className="col-11">
+        <div className="col-11 chat-page-main-section">
             <div className="chat-dashboard-section bg-light rounded-4 pt-0 shadow-sm position-relative" style={{ border: "1px solid #7184f9ab", height: "97vh" }}>
                 {/* <div className="chat-dashboard-header bg-light d-flex align-items-center justify-content-between p-2 px-4 border-bottom border-1" style={{ zIndex: '1000' }}>
                     <div className="bg-light  rounded-2">
