@@ -42,7 +42,7 @@ function ChatContainer() {
       <ChatHeader />
       <div className="overflow-hidden">
         <div className=" pt-2" style={{ height: '60vh', overflowY: 'scroll' }}>
-          {messages?.length > 0 && !isMessagesLoading ? (
+          {Array.isArray(messages) && messages.length > 0 && !isMessagesLoading ? (
             <div className="mx-auto">
 
               {messages.map((msg, index) => {
