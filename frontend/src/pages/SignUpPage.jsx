@@ -12,10 +12,6 @@ function SignUpPage() {
         password: "",
     });
 
-    const [title, setTitle] = useState("Signup");
-    useEffect( ()=> {
-        document.title = "Signup"
-    }, [title]);
 
     const { signup, isSigninUp } = useAuthStore();
 
